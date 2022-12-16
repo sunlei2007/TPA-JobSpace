@@ -1,0 +1,122 @@
+@import './reset.css';
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+}
+
+body {
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+ 
+
+h2{
+    font-size:24px;
+    font-weight:700;
+    text-align:center;
+}
+
+form{
+    margin-top:10px;
+}
+form p + p {
+    margin-top: 10px;
+}
+.forgot-cls {
+    color:var(--app-blue);
+    cursor:pointer;
+}
+.warning-cls {
+    color:#d30404;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+
+.modal-container {
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    display:none;
+}
+.modal-layer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100vw;
+    height: 100vh;
+}
+.modal {
+    background-color: #f3f3f3;
+    width: 400px;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all 0.25s ease-in-out;
+}
+
+.form-input {
+    width: 100%;
+    height: 60px;
+    border: solid 1px #cce8fe;
+    padding: 10px 26px 10px 26px;
+    background-color:#fff;
+     
+}
+.form-message {
+    width: 100%;
+    height: 160px;
+    border: solid 1px #cce8fe;
+    padding: 10px 26px 10px 26px;
+   
+}
+.form-submit {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--app-blue);
+    transition: all 0.25s ease-in-out;
+    
+    border-radius: 4px;
+}
+.form-submit:hover {
+    background-color: #0f97fb;
+
+ }
+.form-sign {
+    border: solid 1px var(--app-blue);
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: var(--app-blue);
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+    border-radius: 4px;
+}
+.form-sign:hover {
+    background-color: #0f97fb;
+    color:#fff;
+}
+.dialog-ani {
+    animation: dialog-ani 0.5s linear;
+}
+@keyframes dialog-ani {
+    0% {
+        transform: translate(0,-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0px);
+        opacity: 1;
+    }
+}
